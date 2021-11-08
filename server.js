@@ -43,4 +43,4 @@ app.post('/api/notes', (req, res) => {
         JSON.stringify({ notes: array }, null, 2)
       );
 return note;
-}
+};
