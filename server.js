@@ -43,4 +43,25 @@ app.post('/api/notes', (req, res) => {
         JSON.stringify({ notes: array }, null, 2)
       );
 return note;
-};
+}
+
+app.delete('/api/notes/:id', function (req, res) {
+
+  const params = req.params.id;
+  
+  const result = notes.filter(note => note.id != params);
+  notes = result;
+  console.log(notes);
+  fs.writeFileSync(
+    path.join(__dirname, './data/notes.json'),
+    JSON.stringify({ notes }, null, 2)
+  );
+
+  res.send('Got a DELETE request at /user')
+})
+
+  app.listen(3001, () =>{
+    console.log(`API server now on port ${PORT}`);
+});
+
+module.exports = app;
