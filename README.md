@@ -1,7 +1,7 @@
 # Note_Taker
 
 ## Purpose
-The Purpose is to give the users a way to write down and save notes on an app, this way they can organize and keep track of their thoughts
+an application used to write and store notes so that you can organize and keep track of your thoughts
 
 ## Built wWth
 * HTML
@@ -10,7 +10,7 @@ The Purpose is to give the users a way to write down and save notes on an app, t
 * Node
 
 # Website
-https://nsmall94.github.io/Horiseon/
+https://note-take-96.herokuapp.com/
 
 ## Screenshot
 ![Note Taker](assets/images/screenshot.png)
